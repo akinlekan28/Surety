@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+<!-- 
+    <main class="container">
+
+    </main> -->
+    <main>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="container">
+                    <div id="display-wrapper" class="top-20"></div>
+                            <div class="row">
+                                <label class="form">Register Other Airline</label>
+                            </div>
+                            <div class="row top-20">
+                                <label for="airline-address">Airline Address</label>
+                                <input type="text" class="form-control" id="airline-address">
+                            </div>
+                            <div class="row top-20">
+                                <btn class="btn btn-primary" id="register-airline">Register Airline</btn>
+                            </div>
+                            
+                            <div class="row mt-5">
+                                <label class="form">Check Registration</label>
+                            </div>
+                            <div class="row mt-2">
+                                <label for="check-address">Airline Address</label>
+                                <input type="text" class="form-control" id="check-address">
+                            </div>
+                            <div class="row top-20">
+                                <btn class="btn btn-primary" id="register-check">Check</btn>
+                            </div>
+                            
+                            <div class="row mt-5">
+                                <label class="form">AIRLINE</label>
+                            </div>
+                            <hr style="border: 0.5px solid #ffffff">
+                            <div class="row top-20">
+                                <label class="form">1. Funding</label>
+                            </div>
+                            <div class="row top-20">
+                                <label>Minimum 10 Ether is needed to register a new flight</label>
+                            </div>
+                            <div class="row top-20">
+                                <btn class="btn btn-primary" id="submit-fund">Submit Fund</btn>
+                            </div>
+                            
+                            <div class="row top-20">
+                                <label class="form">2. Register Flight</label>
+                            </div>
+                            <div class="row top-20">
+                                <label for="flight">Select flight Number</label>
+                            </div>
+                            <div class="row top-20">
+                                <select id="flight-select" class="selectpicker form-control">
+                                    <option value="ANA001">NDB001 => Qatar Airways, Date:1558232053, Brazil -> Mexico </option>
+                                    <option value="NDB002">NDB002 => Singapore Airlines, Date:1558232053, Buenos Aires -> Frankfurt </option>
+                                    <option value="NDB003">NDB003 => ANA All Nippon, Date:1558232053, Tokyo -> Washington </option>
+                                    <option value="NDB004">NDB004 => Cathay Pacific, Date:1558232053, Lagos -> Kuwait City </option>
+                                    <option value="NDB005">NDB005 => Emirates, Date:1558232053, Qatar -> London </option>
+                                    <option value="NDB006">NDB006 => EVA Air, Date:1558232053, Taoyuan -> Bangkok </option>
+                                    <option value="NDB007">NDB007 => Hainan Airlines, Date:1558232053, Shandong -> Pretoria</option>
+                                    <option value="NDB008">NDB008 => Qantas Airways, Date:1558232053, Sydney -> Paris </option>
+                                    <option value="NDB009">NDB009 => Lufthansa, Date:1558232053, Munchen -> Qubec </option>
+                                    <option value="NDB010">NDB010 => Thai Airways, Date:1558232053, Tailand -> Singapore </option>
+                                </select>
+                            </div>
+                            <div class="row top-20">
+                                <btn class="btn btn-primary" id="register-flight">Register Flight</btn>
+                            </div>
+                            
+                            <div class="row mt-5">
+                                <label class="form">PASSENGERS</label>
+                            </div>
+                            <hr style="border: 0.5px solid #ffffff">
+                            <div class="row top-20">
+                                <label class="form">1. Book Flight</label>
+                            </div>
+                            <div class="row top-20">
+                                Choose insurance amount (0.1 - 1.0ETH):
+                                <select id="insurance-select" class="selectpicker form-control">
+                                    <option value="0.1">0.1</option>
+                                    <option value="0.2">0.2</option>
+                                    <option value="0.3">0.3</option>
+                                    <option value="0.4">0.4</option>
+                                    <option value="0.5">0.5</option>
+                                    <option value="0.6">0.6</option>
+                                    <option value="0.7">0.7</option>
+                                    <option value="0.8">0.8</option>
+                                    <option value="0.9">0.9</option>
+                                    <option value="1.0">1.0</option>
+                                </select>
+                            </div>
+                            <div class="row top-20">
+                                <select id="flight-select" class="selectpicker form-control">
+                                    <option value="ANA001">NDB001 => Qatar Airways, Date:1558232053, Brazil -> Mexico </option>
+                                    <option value="NDB002">NDB002 => Singapore Airlines, Date:1558232053, Buenos Aires -> Frankfurt </option>
+                                    <option value="NDB003">NDB003 => ANA All Nippon, Date:1558232053, Tokyo -> Washington </option>
+                                    <option value="NDB004">NDB004 => Cathay Pacific, Date:1558232053, Lagos -> Kuwait City </option>
+                                    <option value="NDB005">NDB005 => Emirates, Date:1558232053, Qatar -> London </option>
+                                    <option value="NDB006">NDB006 => EVA Air, Date:1558232053, Taoyuan -> Bangkok </option>
+                                    <option value="NDB007">NDB007 => Hainan Airlines, Date:1558232053, Shandong -> Pretoria</option>
+                                    <option value="NDB008">NDB008 => Qantas Airways, Date:1558232053, Sydney -> Paris </option>
+                                    <option value="NDB009">NDB009 => Lufthansa, Date:1558232053, Munchen -> Qubec </option>
+                                    <option value="NDB010">NDB010 => Thai Airways, Date:1558232053, Tailand -> Singapore </option>
+                                </select>
+                            </div>
+                            <div class="row top-20">
+                                <btn class="btn btn-primary" id="book-flight">Book</btn>
+                            </div>
+                            
+                            <div class="row mt-5">
+                                <label class="form">2. Request Fligh Status</label>
+                            </div>
+                            <div class="row top-20">
+                                <label for="flight-number">Please select Flight Number</label>
+                            </div>
+                            <div class="row top-20">
+                                <select id="flight-select" class="selectpicker form-control">
+                                    <option value="ANA001">NDB001 => Qatar Airways, Date:1558232053, Brazil -> Mexico </option>
+                                    <option value="NDB002">NDB002 => Singapore Airlines, Date:1558232053, Buenos Aires -> Frankfurt </option>
+                                    <option value="NDB003">NDB003 => ANA All Nippon, Date:1558232053, Tokyo -> Washington </option>
+                                    <option value="NDB004">NDB004 => Cathay Pacific, Date:1558232053, Lagos -> Kuwait City </option>
+                                    <option value="NDB005">NDB005 => Emirates, Date:1558232053, Qatar -> London </option>
+                                    <option value="NDB006">NDB006 => EVA Air, Date:1558232053, Taoyuan -> Bangkok </option>
+                                    <option value="NDB007">NDB007 => Hainan Airlines, Date:1558232053, Shandong -> Pretoria</option>
+                                    <option value="NDB008">NDB008 => Qantas Airways, Date:1558232053, Sydney -> Paris </option>
+                                    <option value="NDB009">NDB009 => Lufthansa, Date:1558232053, Munchen -> Qubec </option>
+                                    <option value="NDB010">NDB010 => Thai Airways, Date:1558232053, Tailand -> Singapore </option>
+                                </select>
+                            </div>
+                            <div class="row top-20">
+                                <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+                            </div>
+                            
+                            <div class="row mt-5">
+                                <label class="form">3. Claim Insurance</label>
+                            </div>
+                            <div class="row top-20">
+                                <label for="claim">Check if you have credits (ETH)</label>:<label id="credit-value"></label>
+                            </div>
+                            <div class="row top-20">
+                                <btn class="btn btn-primary" id="check-credit">Check</btn>
+                            </div>
+                            <div class="row top-20">
+                                <label for="claim">Check your current balance (ETH)</label>:<label id="balance-value"></label>
+                            </div>
+                            <div class="row top-20">
+                                <btn class="btn btn-primary" id="check-balance">Check</btn>
+                            </div>
+                            <div class="row top-20">
+                                <label for="claim">In case of flight delay, passengers get 1.5x the insurance fee paid at buying ticket</label>
+                            </div>
+                            <div class="row top-20">
+                                <btn class="btn btn-primary" id="claim">Claim</btn>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
